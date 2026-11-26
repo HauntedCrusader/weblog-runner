@@ -1,0 +1,47 @@
+{
+  "name": "weblog-runner",
+  "version": "1.0.0",
+  "description": "Tiny static blog generator: Markdown posts in, HTML pages out. Templates are plain JavaScript functions. Zero dependencies.",
+  "homepage": "https://github.com/HauntedCrusader/weblog-runner#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HauntedCrusader/weblog-runner.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HauntedCrusader/weblog-runner/issues"
+  },
+  "type": "module",
+  "bin": {
+    "weblog-runner": "bin/weblog-runner.js"
+  },
+  "types": "./types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "default": "./src/index.js"
+    }
+  },
+  "files": [
+    "bin",
+    "src",
+    "types",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "test": "node scripts/test.mjs",
+    "prepublishOnly": "npm test",
+    "example": "node bin/weblog-runner.js build --config example/weblog.config.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "blog",
+    "static-site-generator",
+    "markdown",
+    "nodejs",
+    "zero-dependencies"
+  ],
+  "author": "HauntedCrusader",
+  "license": "MIT"
+}

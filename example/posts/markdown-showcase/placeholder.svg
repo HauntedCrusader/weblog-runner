@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-label="Placeholder image">
+  <style>
+    .bg { fill: #e9ecef; } .shape { fill: #ced4da; } .frame { stroke: #adb5bd; } .label { fill: #868e96; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #1c2128; } .shape { fill: #373e47; } .frame { stroke: #444c56; } .label { fill: #768390; }
+    }
+  </style>
+  <rect class="bg" width="1200" height="600"/>
+  <path class="shape" d="M480 360l90-110 70 80 50-55 110 85z"/>
+  <circle class="shape" cx="700" cy="230" r="28"/>
+  <rect class="frame" x="460" y="190" width="280" height="200" rx="10" fill="none" stroke-width="6"/>
+  <text class="label" x="600" y="460" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28">1200 × 600</text>
+</svg>
